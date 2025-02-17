@@ -1,8 +1,10 @@
-name: My first Github actions
+name: My first Github Actions
+
 on: [push]
+
 jobs:
-    build-app:
+  build-app:
     runs-on: ubuntu-latest
     steps:
-        -uses: actions/checkout@v2
-        -run: tree
+      - uses: actions/checkout@v2
+      - run: tree
